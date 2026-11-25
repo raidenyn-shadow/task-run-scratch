@@ -1,5 +1,5 @@
 ---
-pointer: "Reviewer models and presets live only in this file; never substitute a model; delivered with the review gate; read this file before any review."
+pointer: "Run models, reviewer models and presets live only in this file; never substitute a model; read this file before any run phase or review."
 skills:
   - "openspec-ff-change"
   - "opsx:ff"
@@ -16,7 +16,19 @@ commands:
   - "\\bopenspec\\s+instructions\\s+(brainstorm|proposal|design|specs|tasks|plan)\\b"
 ---
 
-# Reviewer roster
+# Run models
+
+The model for each role of a task's run. This is the only workflow file that names a model.
+
+| Role | Model | Effort |
+| --- | --- | --- |
+| plan | Opus-5.5 | medium |
+| review | GPT-6.2-Sol | medium |
+| implement | DeepSeek | medium |
+
+A model cannot be started: stop and tell the user; never substitute another model.
+
+## Reviewer presets
 
 The reviewers the superspec review gate can use and the presets over them. This is the only workflow
 file that names a model: the other rules, the schemas, the config, the specs and the procedure refer to

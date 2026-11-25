@@ -1,1 +1,11 @@
-{"agent-harness-verify-gate": {"x": 1}}
+{
+  "agent-harness-verify-gate": {
+    "x": 1
+  },
+  "project-conductor": {
+    "maxParallel": 2,
+    "reviewRounds": 5,
+    "reconcileMinutes": 30,
+    "maxAttempts": 2
+  }
+}
