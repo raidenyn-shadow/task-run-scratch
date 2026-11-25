@@ -22,9 +22,9 @@ The model for each role of a task's run. This is the only workflow file that nam
 
 | Role | Model | Effort |
 | --- | --- | --- |
-| plan | Opus-5.5 | medium |
-| review | GPT-6.2-Sol | medium |
-| implement | DeepSeek | medium |
+| plan | claudeAgent/claude-opus-5-5 | medium |
+| review | opencode/openai/gpt-6.2-sol | medium |
+| implement | opencode/ollama-cloud/deepseek-v4.1-flash:1017 | high |
 
 A model cannot be started: stop and tell the user; never substitute another model.
 
